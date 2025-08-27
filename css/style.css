@@ -4,11 +4,11 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
 	font-size: 16px;
-	--c1: #f35b04;
-	--c2: #f18701;
-	--c3: #ff8800;
-	--c4: #7b2cbf;
-	--c5: #3d348b;
+	--c1: #63c13d;
+	--c2: #59ae37;
+	--c3: #9b3dc1;
+	--c4: #3d63c1;
+	--c5: #593dc1;
 	/* --c1: #ffe69e;
   	--c2: #ffd991;
   	--c3: #ffcc84;
@@ -45,7 +45,7 @@ div[style*='font-family: "Avenir Book"'] {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #121212; /* background color while loading */
+      background: #070e04;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -173,10 +173,8 @@ div[style*='font-family: "Avenir Book"'] {
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #ffffff;
-	color: #1a1a1a;
-	/* color:rgb(26, 26, 26); */
-	/* font-family:"Open Sans",system-ui; */
+	/* background-color: #070e04; */
+	/* color: #070e04; */
 	font-family: 'Space Grotesk';
 	font-size: 1.125rem;
 	/* 18px */
@@ -184,24 +182,11 @@ body {
 	line-height: 1.6;
 }
 
-/* section{
-	background-image:
-   radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 40%, #121212 100%),
-    radial-gradient(rgb(54, 54, 54) 1px, transparent 1px);
-	animation: blink 1.5s infinite alternate;
-  	  background-size:
-    100% 100%,   /* fade covers the whole area 
-    20px 20px;   /* dot spacing 
-	  
-	 background-repeat:
-    no-repeat,
-    repeat;
+.flex{
+	display: flex;
+	gap: 2%;
 
-  background-position:
-    center,
-    0 0;
-	
-} */
+}
 
 /* SECTION = background layer */
 .hero {
@@ -213,7 +198,7 @@ body {
 	/* push it behind everything else */
 
 	background:
-		radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 40%, #121212 100%);
+		radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 40%, #070e04 100%);
 
 	/* dotted layer blinking */
 }
@@ -224,7 +209,7 @@ body {
 	inset: 0;
 
 	background-image:
-		radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 40%, #121212 100%),
+		radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 40%, #070e04 100%),
 		/* fade */
 		radial-gradient(rgb(60, 60, 60) 1px, transparent 1px);
 	/* dots */
@@ -261,7 +246,8 @@ img.spin-hover {
 
 img.spin-hover:hover {
 	transform: scale(1.1) rotate(360deg);
-	box-shadow: 0 0 30px 6px rgba(225, 92, 10, 0.5);
+	/* color: rgb(99, 193, 61); */
+	box-shadow: 0 0 30px 6px rgba(99, 193, 61, 0.5);
 }
 
 
@@ -341,7 +327,7 @@ img.spin-hover:hover {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	overflow: hidden;
-	background: linear-gradient(90deg, #121212, #fff, #121212);
+	background: linear-gradient(90deg, #070e04, #fff, #070e04);
 	background-repeat: no-repeat;
 	background-size: 80%;
 	animation: animate 5s linear infinite;
@@ -378,7 +364,7 @@ h1 {
 }
 
 .container p {
-	margin: 0 0 2rem 0;
+	margin: 0 0 1rem 0;
 }
 
 
@@ -390,7 +376,7 @@ h1 {
   top: 1rem;
   right: 1rem;
   z-index: 3;
-  color: #e15c0a;
+  color: #63c13d;
   border-radius: 20%;
   padding: 0.3rem;
   cursor: pointer;
@@ -477,9 +463,8 @@ h1 {
 
 /* Avatar */
 .avatar {
-	width: 8rem;
-	/* 128px */
-	height: 8rem;
+	width: 6rem;
+	height: 6rem;
 	border-radius: 50%;
 	object-fit: cover;
 	background-position: center;
@@ -487,7 +472,7 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	box-shadow: 0 0 10px 2px rgba(225, 92, 10, 0.5);
+	box-shadow: 0 0 10px 2px rgba(99, 193, 61, 0.5);
 	user-select: none;
 
 }
@@ -584,7 +569,7 @@ a:hover {
 	border-radius: 10px;
 	cursor: pointer;
 
-	transform: scale(1.06);
+	transform: scale(1.04);
 
 	background:
 		radial-gradient(#fff 1px, transparent 1px),
@@ -657,9 +642,9 @@ button {
 /* Avatar
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .avatar {
-	width: 8rem;
+	width: 6rem;
 	/* 128px */
-	height: 8rem;
+	height: 6rem;
 	object-fit: cover;
 	background-position: center;
 	margin-bottom: var(--spacing-l);
@@ -696,7 +681,7 @@ button {
 }
 
 :root.theme-dark body {
-	background-color: #121212;
+	background-color: #070e04;
 	color: #ffffff;
 }
 
@@ -715,7 +700,8 @@ button {
 
 @media (prefers-color-scheme:dark) {
 	:root.theme-auto body {
-		background-color: #121212;
+		/* background-color: #121212; */
+		background-color: #070e04;
 		color: #ffffff;
 	}
 
